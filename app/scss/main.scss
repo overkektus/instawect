@@ -243,4 +243,45 @@ ul > li {
   font-family: "MullerLight", sans-serif;
 }
 
+.guarantees {
+  height: 100vh;
+  padding: 5% 0;
+}
+
+.guarantees__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.guarantees__item-container {
+  padding: 0 10%;
+  display: flex;
+}
+
+.guarantees__item {
+  width: 27%;
+  margin: 0 4%;
+  text-align: center;
+}
+
+.guarantees__item-icon {
+  margin-right: 5px;
+  color: $accent-two;
+}
+
+.guarantees__item-icon--accent {
+  color: $accent;
+}
+
+.guarantees__item-title {
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.guarantees__item-text {
+  font-family: "MullerLight", sans-serif;
+}
+
 @import "media"; // Always at the end
