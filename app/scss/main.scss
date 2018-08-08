@@ -284,4 +284,25 @@ ul > li {
   font-family: "MullerLight", sans-serif;
 }
 
+.style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 212px;
+
+  font-family: "MullerLight", sans-serif;
+
+  @include adaptive-background("../img/style_background.jpg", #93b0fe);
+}
+
+.style__title {
+  color: white;
+  text-align: center;
+}
+
+.style__title > span {
+  font-family: "MullerRegular", sans-serif;
+  font-size: 3rem;
+}
+
 @import "media"; // Always at the end
