@@ -28,34 +28,42 @@
 
 <body>
 
-  <header>
-    <nav>
-      <ul>
-        <li>
-          <a href="#main">Главная</a>
-        </li>
-        <li>
-          <a href="#about-us">О нас</a>
-        </li>
-        <li>
-          <a href="#guarantees">Гарантии</a>
-        </li>
-        <li>
-          <a href="#price">Цена</a>
-        </li>
-        <li>
-          <a href="#contacts">Контакты</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header__menu-wrapper">
+      <div class="header__company">
+        <img class="header__logo" src="./img/logo.png" alt="логотип Instawect">
+        <h2 class="header__company-name">Instawect</h2>
+      </div>
+      <nav class="header__menu">
+        <ul>
+          <li class="header__menu-item">
+            <a href="#main">Главная</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#about-us">О нас</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#guarantees">Гарантии</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#price">Цена</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-    <section id="main">
-      <h2>
+    <section id="main" class="main">
+      <h2 class="main__title">
         Привлекаем клиентов
         <br> Добиваемся результатов
       </h2>
-      <p>Instawect - ваш первый шаг к успешному профилю</p>
-      <a href="">Подробнее</a>
+      <p class="main__content">
+        <span>Instawect</span> - ваш первый шаг к успешному профилю
+      </p>
+      <a class="main__more-btn" href="#how-it-works">Подробнее</a>
     </section>
   </header>
 
@@ -76,7 +84,7 @@
       <button>Связаться</button>
     </section>
 
-    <section Id="how-it-works">
+    <section id="how-it-works">
       <h2>Как мы работаем</h2>
       <div>
         <div>
