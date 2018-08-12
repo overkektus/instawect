@@ -129,9 +129,11 @@ ul > li {
 }
 
 .main {
+  display: flex;
+  justify-content: space-between;
   height: calc(100vh - 79px);
   margin-top: 79px;
-  padding: 15% 14%;
+  padding: 15% 14% 0 14%;
 
   font-family: "MullerLight", sans-serif;
 
@@ -157,6 +159,15 @@ ul > li {
   padding: 20px 50px;
   border-radius: 10px;
   background-color: $accent;
+}
+
+.main__phone-wrapper {
+  align-self: flex-end;
+}
+
+.main__phone {
+  height: 50vh;
+  width: 50vh;
 }
 
 .about-us {
