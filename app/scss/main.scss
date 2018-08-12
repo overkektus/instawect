@@ -6,6 +6,7 @@
 
 * {
   box-sizing: border-box;
+  font-weight: normal;
 }
 
 ::placeholder {
@@ -71,6 +72,10 @@ ul {
 
 ul > li {
   float: left;
+}
+
+.hidden {
+  display: none;
 }
 
 .header__menu-wrapper {
@@ -201,6 +206,9 @@ ul > li {
 }
 
 .how-it-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
   padding: 3% 0%;
   @include adaptive-background("../img/how-it-work_background.jpg", #93b0fe);
@@ -244,6 +252,9 @@ ul > li {
 }
 
 .guarantees {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100vh;
   padding: 5% 0;
 }
@@ -303,6 +314,172 @@ ul > li {
 .style__title > span {
   font-family: "MullerRegular", sans-serif;
   font-size: 3rem;
+}
+
+.price {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.price__item-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.price__item {
+  padding: 40px 40px;
+  margin: 0 0.5%;
+  text-align: center;
+
+  @include adaptive-background("../img/price_background.png", transparent);
+}
+
+.price__item-title {
+  color: white;
+  background-color: $accent-two;
+  border-radius: 10px;
+}
+
+.price__item-price {
+  font-family: "MullerLight", sans-serif;
+}
+
+.price__item-text {
+  padding: 10px;
+  font-family: "MullerLight", sans-serif;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.price__item-more-btn {
+  padding: 1% 2%;
+  color: $accent-two;
+  background-color: transparent;
+  border: 2px solid $accent-two;
+  border-radius: 10px;
+}
+
+.contacts__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  font-size: 2.6rem;
+  color: white;
+}
+
+.contacts__email {
+  font-family: "MullerLight", sans-serif;
+  color: white;
+}
+
+.contacts__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contacts__input-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.contacts__input-left {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.contacts__input-right {
+  display: flex;
+  flex-grow: 1;
+}
+
+.contacts__input-field {
+  padding: 10px 10px;
+  margin: 1% 1%;
+
+  color: #7a7a7a;
+  font-family: "MullerLight", sans-serif;
+
+  border: 2px solid $accent-two;
+  border-radius: 10px;
+}
+
+.contacts__input-field--textarea {
+  width: 100%;
+  resize: none;
+}
+
+.contacts__submit-btn {
+  width: 200px;
+  padding: 10px 30px;
+  margin-right: 0.6%;
+  font-family: "MullerLight", sans-serif;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color: #6b33ff;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3% 10% 0 10%;
+  height: 500px;
+  @include adaptive-background("../img/footer_background.jpg", $accent);
+}
+
+.footer__title {
+  font-family: "MullerLight", sans-serif;
+  color: white;
+}
+
+.footer__links-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__socials {
+  width: 8%;
+  padding: 0;
+}
+
+.footer__socials-item {
+  margin-right: 0%;
+}
+
+.footer__socials-icon {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.footer__links {
+  flex-grow: 1;
+  padding: 0;
+}
+
+.footer__links-item {
+  margin-right: 1%;
+}
+
+.footer__links-item > a {
+  text-decoration: underline;
+  font-family: "MullerLight", sans-serif;
+  color: white;
+}
+
+.footer__copyright {
+  width: 15%;
+  font-family: "MullerLight", sans-serif;
+  color: white;
 }
 
 @import "media"; // Always at the end
