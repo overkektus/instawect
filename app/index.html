@@ -7,13 +7,12 @@
   <!-- <base href="/"> -->
 
   <title>Продвижение instagram | Instawect</title>
-  <meta name="description" content="">
+  <meta name="description" content="Продвижение аккаунтов instagram">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
   <!-- Template Basic Images Start -->
-  <meta property="og:image" content="path/to/image.jpg">
   <link rel="icon" href="img/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
   <!-- Template Basic Images End -->
@@ -24,11 +23,43 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+  <!-- Yandex.Metrika counter -->
+  <script>
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter49945327 = new Ya.Metrika2({
+            id: 49945327,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+          });
+        } catch (e) { }
+      });
 
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/49945327" style="position:absolute; left:-9999px;" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 </head>
-
 <body>
-
   <header class="header">
     <div class="header__menu-wrapper">
       <div class="header__company">
@@ -36,7 +67,7 @@
         <h2 class="header__company-name">Instawect</h2>
       </div>
       <nav class="header__menu">
-        <ul>
+        <ul class="header__menu-mobile header__menu-mobile--close">
           <li class="header__menu-item">
             <a href="#main">Главная</a>
           </li>
@@ -53,11 +84,14 @@
             <a href="#contacts">Контакты</a>
           </li>
         </ul>
+        <div class="burger-menu">
+          <div class="burger"></div>
+        </div>
       </nav>
     </div>
 
     <section id="main" class="main">
-      <div>
+      <div class="main__tagline">
         <h2 class="main__title">
           Привлекаем клиентов
           <br> Добиваемся результатов
@@ -74,7 +108,7 @@
   </header>
 
   <main>
-    <section id="about-us" class="about-us">
+    <section id="about-us" class="about-us section__wrapper">
       <h2 class="about-us__title">
         Instawect
         <br>
@@ -90,104 +124,112 @@
         Мы проводим комплекс маркетинговых мероприятий, целями которых являются увеличение продаж товара и оказываемых вами услуг,
         увеличение узнаваемости вашей компании, привлечение новых клиентов.
       </p>
-      <button class="about-us__callback">Связаться</button>
+      <a href="#contacts" class="about-us__callback">Связаться</a>
     </section>
 
     <section id="how-it-works" class="how-it-works">
-      <h2 class="how-it-works__title">Как мы работаем</h2>
-      <div class="how-it-works__item-container">
-        <div class="how-it-works__item">
-          <img class="how-it-works__img" src="./img/individual-style_icon.png" alt="">
-          <h3 class="how-it-works__item-title">
-            Создаём индивидуальный стиль
-          </h3>
-          <p class="how-it-works__item-text">
-            Создаем ваш индивидуальный стиль для Instagram с учётом вашего логотипа и фирменных цветов.
-          </p>
-        </div>
-        <div class="how-it-works__item">
-          <img class="how-it-works__img" src="./img/our-work_icon.png" alt="">
-          <h3 class="how-it-works__item-title">
-            Всё делаем сами, ваше дело отдыхать
-          </h3>
-          <p class="how-it-works__item-text">
-            Наши дизайнеры займутся оформлением и созданием индивидуального стиля, наши тех.сотрудники займутся раскруткой аккаунта,
-            вам остаётся только отдыхать.
-          </p>
-        </div>
-        <div class="how-it-works__item">
-          <img class="how-it-works__img" src="./img/aud_icon.png" alt="">
-          <h3 class="how-it-works__item-title">
-            Найдём вашу целевую аудиторию
-          </h3>
-          <p class="how-it-works__item-text">
-            Мы работаем только с вашей целевой аудиторией, никаких ботов и коммерческих аккаунтов
-          </p>
-        </div>
-        <div class="how-it-works__item">
-          <img class="how-it-works__img" src="./img/info_icon.png" alt="">
-          <h3 class="how-it-works__item-title">
-            Предоставляем важную информацию
-          </h3>
-          <p class="how-it-works__item-text">
-            Мы проверяем все комментарии и Direct сообщения. Фильтруем для вас важные сообщения и предоставляем их Вам.
-          </p>
-        </div>
-        <div class="how-it-works__item">
-          <img class="how-it-works__img" src="./img/planning_icon.png" alt="">
-          <h3 class="how-it-works__item-title">
-            Заранее планируем свои действия
-          </h3>
-          <p class="how-it-works__item-text">
-            Мы делаем нашу работу с особой точностью. При работе с клиентом учитываются все мелочи.
-          </p>
-        </div>
-        <div class="how-it-works__item">
-          <img class="how-it-works__img" src="./img/security_icon.png" alt="">
-          <h3 class="how-it-works__item-title">
-            Обеспечиваем высокую безопасность
-          </h3>
-          <p class="how-it-works__item-text">
-            Наши специалисты знают и соблюдают все технические требования при работе с Instagram.
-          </p>
-        </div>
+      <div class="section__wrapper">
+          <h2 class="how-it-works__title">Как мы работаем</h2>
+          <div class="how-it-works__item-container">
+            <div class="how-it-works__item-container-row">
+              <div class="how-it-works__item">
+                <img class="how-it-works__img" src="./img/individual-style_icon.png" alt="">
+                <h3 class="how-it-works__item-title">
+                  Создаём индивидуальный стиль
+                </h3>
+                <p class="how-it-works__item-text">
+                  Создаем ваш индивидуальный стиль для Instagram с учётом вашего логотипа и фирменных цветов.
+                </p>
+              </div>
+              <div class="how-it-works__item">
+                <img class="how-it-works__img" src="./img/our-work_icon.png" alt="">
+                <h3 class="how-it-works__item-title">
+                  Всё делаем сами, ваше дело отдыхать
+                </h3>
+                <p class="how-it-works__item-text">
+                  Наши дизайнеры займутся оформлением и созданием индивидуального стиля, наши тех.сотрудники займутся раскруткой аккаунта,
+                  вам остаётся только отдыхать.
+                </p>
+              </div>
+              <div class="how-it-works__item">
+                <img class="how-it-works__img" src="./img/aud_icon.png" alt="">
+                <h3 class="how-it-works__item-title">
+                  Найдём вашу целевую аудиторию
+                </h3>
+                <p class="how-it-works__item-text">
+                  Мы работаем только с вашей целевой аудиторией, никаких ботов и коммерческих аккаунтов
+                </p>
+              </div>
+            </div>
+            <div class="how-it-works__item-container-row">
+              <div class="how-it-works__item">
+                <img class="how-it-works__img" src="./img/info_icon.png" alt="">
+                <h3 class="how-it-works__item-title">
+                  Предоставляем важную информацию
+                </h3>
+                <p class="how-it-works__item-text">
+                  Мы проверяем все комментарии и Direct сообщения. Фильтруем для вас важные сообщения и предоставляем их Вам.
+                </p>
+              </div>
+              <div class="how-it-works__item">
+                <img class="how-it-works__img" src="./img/planning_icon.png" alt="">
+                <h3 class="how-it-works__item-title">
+                  Заранее планируем свои действия
+                </h3>
+                <p class="how-it-works__item-text">
+                  Мы делаем нашу работу с особой точностью. При работе с клиентом учитываются все мелочи.
+                </p>
+              </div>
+              <div class="how-it-works__item">
+                <img class="how-it-works__img" src="./img/security_icon.png" alt="">
+                <h3 class="how-it-works__item-title">
+                  Обеспечиваем высокую безопасность
+                </h3>
+                <p class="how-it-works__item-text">
+                  Наши специалисты знают и соблюдают все технические требования при работе с Instagram.
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
 
     <section id="guarantees" class="guarantees">
-      <h2 class="guarantees__title">Гарантии?</h2>
-      <div class="guarantees__item-container">
-        <div class="guarantees__item">
-          <h3 class="guarantees__item-title">
-            <i class="guarantees__item-icon fas fa-exclamation"></i>
-            Живые подписчики
-          </h3>
-          <p class="guarantees__item-text">
-            Нельзя накрутить живых подписчиков. Они такие же живые люди, как и вы. Их невозможно заставить купить товар, если они не
-            хотят этого делать. Для этого мы и предоставляем услуги нашего сервиса, чтобы вызвать у них желание купить ваш
-            товар или воспользоваться вашими услугами.
-          </p>
-        </div>
-        <div class="guarantees__item">
-          <h3 class="guarantees__item-title">
-            <i class="guarantees__item-icon guarantees__item-icon--accent fas fa-check"></i>
-            Гарантируем
-          </h3>
-          <p class="guarantees__item-text">
-            Вызвать желание купить ваш товар или воспользоваться вашими услугами - вот наша главная задача. Никто не можем гарантировать
-            вам высокий уровень продаж, но мы гарантируем, что донесём информацию о вашем продукте и оказываемых вами услугах
-            до потребителя.
-          </p>
-        </div>
-        <div class="guarantees__item">
-          <h3 class="guarantees__item-title">
-            <i class="guarantees__item-icon fas fa-exclamation"></i>
-            Много или мало?
-          </h3>
-          <p class="guarantees__item-text">
-            Никто не может гарантировать вам определённый уровень продаж. Уровень продаж определяется множеством факторов, от предоставляемых
-            вами продуктов или услуг, до описания на товара на сайте.
-          </p>
+      <div class="section__wrapper">
+        <h2 class="guarantees__title">Гарантии?</h2>
+        <div class="guarantees__item-container">
+          <div class="guarantees__item">
+            <h3 class="guarantees__item-title">
+              <i class="guarantees__item-icon fas fa-exclamation"></i>
+              Живые подписчики
+            </h3>
+            <p class="guarantees__item-text">
+              Нельзя накрутить живых подписчиков. Они такие же живые люди, как и вы. Их невозможно заставить купить товар, если они не
+              хотят этого делать. Для этого мы и предоставляем услуги нашего сервиса, чтобы вызвать у них желание купить ваш
+              товар или воспользоваться вашими услугами.
+            </p>
+          </div>
+          <div class="guarantees__item">
+            <h3 class="guarantees__item-title">
+              <i class="guarantees__item-icon guarantees__item-icon--accent fas fa-check"></i>
+              Гарантируем
+            </h3>
+            <p class="guarantees__item-text">
+              Вызвать желание купить ваш товар или воспользоваться вашими услугами - вот наша главная задача. Никто не можем гарантировать
+              вам высокий уровень продаж, но мы гарантируем, что донесём информацию о вашем продукте и оказываемых вами услугах
+              до потребителя.
+            </p>
+          </div>
+          <div class="guarantees__item">
+            <h3 class="guarantees__item-title">
+              <i class="guarantees__item-icon fas fa-exclamation"></i>
+              Много или мало?
+            </h3>
+            <p class="guarantees__item-text">
+              Никто не может гарантировать вам определённый уровень продаж. Уровень продаж определяется множеством факторов, от предоставляемых
+              вами продуктов или услуг, до описания на товара на сайте.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -199,129 +241,1199 @@
       </h2>
     </section>
 
-    <section id="price" class="price">
+    <section id="price" class="price section__wrapper">
       <h2 class="hidden">Цены</h2>
       <div class="price__item-container">
         <div class="price__item">
           <h3 class="price__item-title">
             Любитель
             <br>
-            <span class="price__item-price">1000 руб/нед.</span>
-            <img class="price__discout-icon" src="img/discount_icon.png" alt="">
+            <span class="price__item-price">3000 руб/нед.</span>
           </h3>
           <p class="price__item-text">
             Когда цель не продать, а удержать аудиторию. Нет услуг и товаров, есть контент, то пакет услуг "Любитель" это ваш выбор.
             Данный пакет услуг подходит тематическим сообществам, лидерам мнений, блогерам и контент-мейкерам, которые продают
             рекламные посты.
           </p>
-          <button class="price__item-more-btn">Подробнее</button>
+          <a href="#amateur-popup" class="price__item-more-btn js-show-pop-up">Подробнее</a>
         </div>
-        <div class="price__item">
+        <div class="price__item price__item--popular">
           <h3 class="price__item-title">
             Бизнесмен
             <br>
-            <span class="price__item-price">2000 руб/нед.</span>
-            <img class="price__discout-icon" src="img/discount_icon.png" alt="">
+            <span class="price__item-price">6000 руб/нед.</span>
           </h3>
-          <p class="price__item-text">
+          <p class="price__item-text price__item-text--popular">
             Если вы индивидуальный предприниматель, ставящий перед собой цели увеличить прибыль, завоевать клиентов и укрепить свою позицию
             на потребительском рынке, то пакет услуг "Бизнесмен" это то, что вам нужно.
           </p>
-          <button class="price__item-more-btn">Подробнее</button>
+          <a href="#businessman-popup" class="price__item-more-btn js-show-pop-up">Подробнее</a>
+          <div class="price__item-overlay"></div>
         </div>
         <div class="price__item">
           <h3 class="price__item-title">
             Профессионал
             <br>
-            <span class="price__item-price">5000 руб/нед.</span>
-            <img class="price__discout-icon" src="img/discount_icon.png" alt="">
+            <span class="price__item-price">12000 руб/нед.</span>
           </h3>
           <p class="price__item-text">
             Если тяжёлая и долгая работы над собой, брендом и продуктом не приносит результатов, то это не значит, что вы плохой бизнесмен.
             Возможно, вы просто не знаете, как продвигать свой продукт или услугу, и в данном случае вам требуется пакет
             услуг "Профессионал".
           </p>
-          <button class="price__item-more-btn">Подробнее</button>
+          <a href="#professional-popup" class="price__item-more-btn js-show-pop-up">Подробнее</a>
         </div>
+
         <div class="price__item">
           <h3 class="price__item-title">
             Лендинг
             <br>
-            <span class="price__item-price">8000 руб/нед.</span>
-            <img class="price__discout-icon" src="img/discount_icon.png" alt="">
+            <span class="price__item-price">8000 руб.</span>
           </h3>
           <p class="price__item-text">
             Лендинг инстаграм – это мини-версия обычного лендинга, адаптированная под требования социальной сети инстаграм и размещенная
             на Вашем аккаунте. Основной задачей такого лендинга является продажа посетителям Вашего аккаунта, конкретного
             товара или услуги, внутри социальной сети инстаграм, либо привлечение трафика на внешний ресурс.
           </p>
-          <button class="price__item-more-btn">Подробнее</button>
+          <a href="#landing-popup" class="price__item-more-btn js-show-pop-up">Подробнее</a>
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
+    <div class="section__wrapper">
     <section id="contacts">
-      <div class="contacts__title-wrapper">
-        <h2 class="contacts__title">Свяжитесь с нами</h2>
-        <p class="contacts__email">
-          Наши контакты:
-          <br> instawect@gmail.com
-        </p>
-      </div>
-      <form class="contacts__form" action="">
-        <div class="contacts__input-wrapper">
-          <div class="contacts__input-left">
-            <input class="contacts__input-field" type="text" placeholder="Имя *">
-            <input class="contacts__input-field" type="text" placeholder="Ваш email *">
-            <input class="contacts__input-field" type="text" placeholder="Способ связи с вами (VK, telegram, facebook, др.)">
-          </div>
-          <div class="contacts__input-right">
-            <textarea class="contacts__input-field contacts__input-field--textarea" placeholder="Опишите что вы хотите продвигать в Instagram *"></textarea>
-          </div>
+        <div class="contacts__title-wrapper">
+          <h2 class="contacts__title">Свяжитесь с нами</h2>
+          <p class="contacts__email">
+            Наши контакты:
+            <br>
+            <a class="contacts__email-addr" href="mailto:instawec@gmail.com">instawect@gmail.com</a>
+          </p>
         </div>
-        <input class="contacts__submit-btn" type="submit" value="Отправить">
-      </form>
-    </section>
+        <form class="contacts__form">
+          <div class="contacts__input-wrapper">
+            <div class="contacts__input-left">
+              <label for="name" class="hidden">Ваше имя</label>
+              <input class="contacts__input-field js-name" type="text" id="name" required autocomplete="off" placeholder="Имя *">
+              <label for="email" class="hidden">Ваш email</label>
+              <input class="contacts__input-field js-email" type="text" id="email" required autocomplete="off" placeholder="Ваш email *">
+              <label for="method-communication" class="hidden">Способ связи с вами</label>
+              <input class="contacts__input-field js-way" type="text" id="method-communication" required autocomplete="off" placeholder="Способ связи с вами (VK, telegram, facebook, др.) *">
+            </div>
+            <div class="contacts__input-right">
+              <label for="message" class="hidden">Опишите что вы хотите продвигать в Instagram</label>
+              <textarea class="contacts__input-field contacts__input-field--textarea js-message" id="message" autocomplete="off"
+                placeholder="Опишите что вы хотите продвигать в Instagram *"></textarea>
+            </div>
+          </div>
+          <button class="contacts__submit-btn">Отправить</button>
+          <div class="lds-ring hidden"><div></div><div></div><div></div><div></div></div>
+        </form>
 
-    <div>
-      <p class="footer__title">Подпишитесь на нас в соцсетях:</p>
-      <div class="footer__links-wrapper">
-        <ul class="footer__socials">
-          <li class="footer__socials-item">
-            <a href="#">
-              <i class="footer__socials-icon fab fa-vk"></i>
-            </a>
-          </li>
-          <li class="footer__socials-item">
-            <a href="#">
-              <i class="footer__socials-icon fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-        <ul class="footer__links">
-          <li class="footer__links-item">
-            <a href="#">
-              Пользовательское соглашение
-            </a>
-          </li>
-          <li class="footer__links-item">
-            <a href="#">
-              Политика конфиденциальности
-            </a>
-          </li>
-          <li class="footer__links-item">
-            <a href="#">
-              Публичный договор
-            </a>
-          </li>
-        </ul>
-        <p class="footer__copyright">&#169; 2018 Instawect</p>
+        <div class="message message--success ">
+          <p class="message__text">Сообщение успешно отправлено!</p>
+        </div>
+
+        <div class="message message--error">
+          <p class="message__text">Проверьте данные!</p>
+        </div>
+      </section>
+
+      <div class="footer__bottom">
+        <p class="footer__title">Подпишитесь на нас в соцсетях:</p>
+        <div class="footer__links-wrapper">
+          <ul class="footer__socials">
+            <li class="footer__socials-item">
+              <a href="https://vk.com/instawect" target="_blank" rel="noopener noreferrer">
+                <i class="footer__socials-icon fab fa-vk"></i>
+              </a>
+            </li>
+            <li class="footer__socials-item">
+              <a href="https://www.instagram.com/instawect/" target="_blank" rel="noopener noreferrer">
+                <i class="footer__socials-icon fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <ul class="footer__links">
+            <li class="footer__links-item">
+              <a href="#user-agreement-popup" class="js-show-pop-up">
+                Пользовательское соглашение
+              </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#privacy-policy-popup" class="js-show-pop-up">
+                Политика конфиденциальности
+              </a>
+            </li>
+            <li class="footer__links-item">
+              <a href="#public-contract-popup" class="js-show-pop-up">
+                Публичный договор
+              </a>
+            </li>
+          </ul>
+          <p class="footer__copyright">
+            &#169; <span class="footer__copyright-year"></span> Instawect
+          </p>
+        </div>
       </div>
     </div>
   </footer>
+
+  <div id="amateur-popup" class="popup mfp-hide">
+    <section class="amateur">
+      <div class="popup__title-wrapper">
+        <h2 class="popup__title">Любитель</h2>
+      </div>
+      <ul class="popup__list">
+        <li class="popup__list-item">
+          Создание вашего аккаунта
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div id="businessman-popup" class="popup mfp-hide">
+    <section class="businessman">
+      <div class="popup__title-wrapper">
+        <h2 class="popup__title">Бизнесмен</h2>
+      </div>
+      <ul class="popup__list">
+      </ul>
+    </section>
+  </div>
+
+  <div id="professional-popup" class="popup mfp-hide">
+    <section class="professional">
+      <div class="popup__title-wrapper">
+        <h2 class="popup__title">Профессионал</h2>
+      </div>
+      <ul class="popup__list">
+      </ul>
+    </section>
+  </div>
+
+  <div id="landing-popup" class="popup mfp-hide">
+    <section class="landing">
+      <div class="popup__title-wrapper">
+        <h2 class="popup__title">Лендинг</h2>
+      </div>
+      <ul class="popup__list">
+      </ul>
+    </section>
+  </div>
+
+  <div id="user-agreement-popup" class="popup mfp-hide">
+    <section class="user-agreement">
+      <h2 class="user-agreement__title">пользовательское соглашение</h2>
+      <p class="user-agreement__description">
+        Настоящее Соглашение определяет условия использования Пользователями материалов и сервисов сайта www.instawect.com (далее
+        — «Сайт»).
+      </p>
+      <ol>
+        <li>Общие условия
+          <ol>
+            <li>
+              Использование материалов и сервисов Сайта регулируется нормами действующего законодательства Республики Беларусь.
+            </li>
+            <li>
+              Настоящее Соглашение является публичной офертой. Получая доступ к материалам Сайта, Пользователь считается присоединившимся
+              к настоящему Соглашению.
+            </li>
+            <li>
+              Администрация Сайта вправе в любое время в одностороннем порядке изменять условия настоящего Соглашения. Такие изменения
+              вступают в силу по истечении 3 (Трех) дней с момента размещения новой версии Соглашения на сайте. При несогласии
+              Пользователя с внесенными изменениями он обязан отказаться от доступа к Сайту, прекратить использование материалов
+              и сервисов Сайта.
+            </li>
+          </ol>
+        </li>
+        <li>Обязательства Пользователя
+          <ol>
+            <li>
+              Пользователь соглашается не предпринимать действий, которые могут рассматриваться как нарушающие белорусское законодательство
+              или нормы международного права, в том числе в сфереинтеллектуальной собственности, авторских и/или смежных
+              правах, а также любых действий, которые приводят или могут привести к нарушению нормальной работы Сайта и сервисов
+              Сайта.
+            </li>
+            <li>
+              Использование материалов Сайта без согласия правообладателей не допускается. Для правомерного использования материалов Сайта
+              необходимо заключение лицензионных договоров (получение лицензий) от Правообладателей.
+            </li>
+            <li>
+              При цитировании материалов Сайта, включая охраняемые авторские произведения, ссылка на Сайт обязательна.
+            </li>
+            <li>
+              Комментарии и иные записи Пользователя на Сайте не должны вступать в противоречие с требованиями законодательства Республики
+              Беларусь и общепринятых норм морали и нравственности.
+            </li>
+            <li>
+              Пользователь предупрежден о том, что Администрация Сайта не несет ответственности за посещение и использование им внешних
+              ресурсов, ссылки на которые могут содержаться на сайте.
+            </li>
+            <li>
+              Пользователь согласен с тем, что Администрация Сайта не несет ответственности и не имеет прямых или косвенных обязательств
+              перед Пользователем в связи с любыми возможными или возникшими потерями или убытками, связанными с любым содержанием
+              Сайта, регистрацией авторских прав и сведениями о такой регистрации, товарами или услугами, доступными на или
+              полученными через внешние сайты или ресурсы либо иные контакты Пользователя, в которые он вступил, используя
+              размещенную на Сайте информацию или ссылки на внешние ресурсы.
+            </li>
+            <li>
+              Пользователь принимает положение о том, что все материалы и сервисы Сайта или любая их часть могут сопровождаться рекламой.
+              Пользователь согласен с тем, что Администрация Сайта не несет какой-либо ответственности и не имеет каких-либо
+              обязательств в связи с такой рекламой.
+            </li>
+          </ol>
+        </li>
+        <li>Прочие условия
+          <ol>
+            <li>
+              Все возможные споры, вытекающие из настоящего Соглашения или связанные с ним, подлежат разрешению в соответствии с действующим
+              законодательством Республики Беларусь.
+            </li>
+            <li>
+              Ничто в Соглашении не может пониматься как установление между Пользователем и Администрации Сайта агентских отношений, отношений
+              товарищества, отношений по совместной деятельности, отношений личного найма, либо каких-то иных отношений,
+              прямо не предусмотренных Соглашением.
+            </li>
+            <li>
+              Признание судом какого-либо положения Соглашения недействительным или не подлежащим принудительному исполнению не влечет
+              недействительности иных положений Соглашения.
+            </li>
+            <li>
+              Бездействие со стороны Администрации Сайта в случае нарушения кем-либо из Пользователей положений Соглашения не лишает Администрацию
+              Сайта права предпринять позднее соответствующие действия в защиту своих интересов и защиту авторских прав на
+              охраняемые в соответствии с законодательством материалы Сайта.
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <p>Пользователь подтверждает, что ознакомлен со всеми пунктами настоящего Соглашения и безусловно принимает их.</p>
+    </section>
+  </div>
+
+  <div id="privacy-policy-popup" class="popup mfp-hide">
+    <section class="privacy-policy">
+      <h2 class="privacy-policy__title">политика конфиденциальности</h2>
+      <p class="privacy-policy__description">
+          Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации,
+          которую сайт www.instawect.com, может получить о Пользователе во время использования сайта.
+      </p>
+      <ol>
+        <li>
+          ОПРЕДЕЛЕНИЕ ТЕРМИНОВ
+          <ol>
+            <li>
+              В настоящей Политике конфиденциальности используются следующие термины:
+              <ol>
+                <li>
+                  «Сайт» – сайт https://instawect.com/
+                </li>
+                <li>
+                  «Администрация Сайта» – уполномоченные сотрудники по управлению сайтом, действующие от имени Общества с ограниченной ответственностью «Онлайнер», которые организуют и (или) осуществляет обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.
+                </li>
+                <li>
+                  «Персональные данные» - любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).
+                </li>
+                <li>
+                  «Обработка персональных данных» - любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+                </li>
+                <li>
+                  «Конфиденциальность персональных данных» - обязательное для соблюдения Администрацией Сайта или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания.
+                </li>
+                <li>
+                  «Пользователь Сайта (далее Пользователь)» – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт.
+                </li>
+                <li>
+                  «Cookies» — небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке открыть страницу соответствующего сайта.
+                </li>
+                <li>
+                  «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          ОБЩИЕ ПОЛОЖЕНИЯ
+          <ol>
+            <li>
+              Использование Пользователем Сайта означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.
+            </li>
+            <li>
+              В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование Сайта.
+            </li>
+            <li>
+              Настоящая Политика конфиденциальности применяется только к Сайту. Сайт не контролирует и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на Сайте.
+            </li>
+            <li>
+              Администрация Сайта не проверяет достоверность персональных данных, предоставляемых Пользователем Сайта.
+            </li>
+          </ol>
+        </li>
+        <li>
+          ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ
+          <ol>
+            <li>
+              Настоящая Политика конфиденциальности устанавливает обязательства Администрации Сайта по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет по запросу Администрации Сайта при регистрации на Сайте или при совершении иных действий посредством Сайта.
+            </li>
+            <li>
+              Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения регистрационной формы или совершения иных действий на Сайте, и могут включать в себя следующую информацию:
+              <ol>
+                <li>
+                  фамилию, имя, отчество Пользователя;
+                </li>
+                <li>
+                  контактный телефон Пользователя;
+                </li>
+                <li>
+                  адрес электронной почты (e-mail);
+                </li>
+                <li>
+                  место жительство Пользователя.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Сайт защищает данные, которые автоматически передаются при посещении страниц, на которых установлен статистический скрипт системы («пиксель»):
+              <br>- IP адрес;
+              <br>- информация из cookies;
+              <br>- информация о браузере (или иной программе, которая осуществляет доступ к показу рекламы);
+              <br>- время доступа;
+              <br>- адрес страницы, на которой расположен рекламный блок;
+              <br>- реферер (адрес предыдущей страницы).
+              <ol>
+                <li>
+                  Отключение cookies может повлечь невозможность доступа к частям Сайта, требующим авторизации.
+                </li>
+                <li>
+                  Сайт осуществляет сбор статистики об IP-адресах своих посетителей. Данная информация используется с целью выявления и решения технических проблем, для контроля законности проводимых финансовых платежей.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Любая иная персональная информация неоговоренная выше (история покупок, используемые браузеры и операционные системы и т.д.) подлежит надежному хранению и нераспространению, за исключением случаев, предусмотренных в п.п. 5.2. и 5.3. настоящей Политики конфиденциальности.
+            </li>
+          </ol>
+        </li>
+        <li>
+          ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ
+          <ol>
+            <li>
+              Персональные данные Пользователя Администрация Сайта может использовать в целях:
+              <ol>
+                <li>
+                  Идентификации Пользователя, зарегистрированного на Сайте.
+                </li>
+                <li>
+                  Предоставления Пользователю доступа к персонализированным ресурсам Сайта.
+                </li>
+                <li>
+                  Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования Сайта, оказания услуг, обработка запросов и заявок от Пользователя.
+                </li>
+                <li>
+                  Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества.
+                </li>
+                <li>
+                  Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.
+                </li>
+                <li>
+                  Создания учетной записи для совершения покупок, если Пользователь дал согласие на создание учетной записи.
+                </li>
+                <li>
+                  Предоставления Пользователю эффективной клиентской и технической поддержки при возникновении проблем связанных с использованием Сайта.
+                </li>
+                <li>
+                  Предоставления Пользователю с его согласия, новостной рассылки и иных сведений от имени Сайта.
+                </li>
+                <li>
+                  Осуществления рекламной деятельности с согласия Пользователя.
+                </li>
+                <li>
+                  Предоставления доступа Пользователю на сайты или сервисы партнеров Сайта с целью получения продуктов, обновлений и услуг.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ
+          <ol>
+            <li>
+              Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.
+            </li>
+            <li>
+              Пользователь соглашается с тем, что Администрация Сайта вправе передавать персональные данные третьим лицам, в частности, курьерским службам, организациями почтовой связи, операторам электросвязи, исключительно в целях выполнения заказа Пользователя, оформленного на Сайте.
+            </li>
+            <li>
+              Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти Республики Беларусь только по основаниям и в порядке, установленным законодательством Республики Беларусь.
+            </li>
+            <li>
+              При утрате или разглашении персональных данных Администрация сайта информирует Пользователя об утрате или разглашении персональных данных.
+            </li>
+            <li>
+              Администрация сайта принимает необходимые организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.
+            </li>
+            <li>
+              Администрация сайта совместно с Пользователем принимает все необходимые меры по предотвращению убытков или иных отрицательных последствий, вызванных утратой или разглашением персональных данных Пользователя.
+            </li>
+          </ol>
+        </li>
+        <li>
+          ОБЯЗАТЕЛЬСТВА СТОРОН
+          <ol>
+            <li>
+              Пользователь обязан:
+              <ol>
+                <li>
+                  Предоставить информацию о персональных данных, необходимую для пользования Сайтом.
+                </li>
+                <li>
+                  Обновить, дополнить предоставленную информацию о персональных данных в случае изменения данной информации.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Администрация сайта обязана:
+              <ol>
+                <li>
+                  Использовать полученную информацию исключительно для целей, указанных в п. 4 настоящей Политики конфиденциальности.
+                </li>
+                <li>
+                  Обеспечить хранение конфиденциальной информации в тайне, не разглашать без предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен, опубликование, либо разглашение иными возможными способами переданных персональных данных Пользователя, за исключением п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.
+                </li>
+                <li>
+                  Принимать меры предосторожности для защиты конфиденциальности персональных данных Пользователя согласно порядку, обычно используемого для защиты такого рода информации в существующем деловом обороте.
+                </li>
+                <li>
+                  Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя или его законного представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки, в случае выявления недостоверных персональных данных или неправомерных действий.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          ОТВЕТСТВЕННОСТЬ СТОРОН
+          <ol>
+            <li>
+              Администрация Сайта, не исполнившая свои обязательства, несёт ответственность за убытки, понесённые Пользователем в связи с неправомерным использованием персональных данных, в соответствии с законодательством Республики Беларусь, за исключением случаев, предусмотренных п.п. 5.2., 5.3. и 7.2. настоящей Политики Конфиденциальности.
+            </li>
+            <li>
+              В случае утраты или разглашения Конфиденциальной информации Администрация Сайта не несёт ответственность, если данная конфиденциальная информация:
+              <ol>
+                <li>
+                  Стала публичным достоянием до её утраты или разглашения.
+                </li>
+                <li>
+                  Была получена от третьей стороны до момента её получения Администрацией Сайта.
+                </li>
+                <li>
+                  Была разглашена с согласия Пользователя.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          РАЗРЕШЕНИЕ СПОРОВ
+          <ol>
+            <li>
+              До обращения в суд с иском по спорам, возникающим из отношений между Пользователем Сайта и Администрацией Сайта, обязательным является предъявление претензии (письменного предложения о добровольном урегулировании спора).
+            </li>
+            <li>
+              Получатель претензии в течение 30 календарных дней со дня получения претензии, письменно уведомляет заявителя претензии о результатах рассмотрения претензии.
+            </li>
+            <li>
+              При не достижении соглашения спор будет передан на рассмотрение в судебный орган в соответствии с действующим законодательством Республики Беларусь.
+            </li>
+            <li>
+              К настоящей Политике конфиденциальности и отношениям между Пользователем и Администрацией Сайта применяется действующее законодательство Республики Беларусь.
+            </li>
+          </ol>
+        </li>
+        <li>
+          ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ
+          <ol>
+            <li>
+                Администрация Сайта вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.
+            </li>
+            <li>
+                Новая Политика конфиденциальности вступает в силу с момента ее размещения на Сайте, если иное не предусмотрено новой редакцией Политики конфиденциальности.
+            </li>
+            <li>
+                Все предложения или вопросы по настоящей Политике конфиденциальности следует направлять на электронный адрес Администрации Сайта: info@onliner.by
+            </li>
+            <li>
+                Действующая Политика конфиденциальности размещена на странице по адресу: www.instawect.com/privacy-policy
+            </li>
+          </ol>
+        </li>
+      </ol>
+      <p>Пользователь подтверждает, что ознакомлен со всеми пунктами настоящего Соглашения и безусловно принимает их.</p>
+    </section>
+  </div>
+
+  <div id="public-contract-popup" class="popup mfp-hide">
+    <section class="public-contract">
+      <h2 class="public-contract__title">Публичный договор возмездного оказания рекламных услуг</h2>
+      <p class="public-contract__description">
+          Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации,
+          которую сайт www.instawect.com, может получить о Пользователе во время использования сайта.
+      </p>
+      <div>
+        <p>
+          В соответствии со ст.396 Гражданского Кодекса Республики Беларусь публичный договор является одним из видов договоров, в
+          соответствии с которым одна сторона принимает на себя обязательство по оказанию услуг в отношении неопределенного
+          круга лиц, обратившихся с запросом на предоставление данных услуг.
+        </p>
+        <p>
+          Публичный договор не требует оформления на бумаге и его последующего подписания сторонами, обладает юридической силой в силу
+          совершения сторонами определенных действий, указывающих на их волеизъявление вступить в договорные отношения.
+        </p>
+        <p>
+          В частности, публикация (размещение) текста публичного договора на официальном сайте компании является публичным предложением
+          (офертой) компании, адресованным широкому кругу лиц с целью оказания определенных видов услуг (п.2. ст.407 Гражданского
+          Кодекса Республики Беларусь).
+        </p>
+        <p>
+          Фактом, подтверждающим заключение публичного договора со стороны потребителя услуг, является оформление им заявки на предоставление
+          услуг и их последующая оплата (п.3 ст.408 Гражданского Кодекса Республики Беларусь).
+        </p>
+        <p>
+          Публичный договор, совершенный в вышеописанном порядке, считается заключенным в простой письменной форме (п.2, п.3 ст.404
+          и п.3 ст.408 Гражданского Кодекса Республики Беларусь), и соответственно не требует оформления на бумаге и обладает
+          полной юридической силой.
+        </p>
+      </div>
+      <p>
+        Настоящий Договор (далее по тексту "Договор") определяет порядок предоставления рекламных услуг, а также взаимные права,
+        обязанности и порядок взаимоотношений между представителем сайта www.Instawect.com, именуемым в дальнейшем “Исполнитель”,
+        и потребителем услуг (физическое лицо, юридическое лицо, индивидуальный предприниматель), именуемым в дальнейшем
+        "Заказчик", принявшим (акцептовавшим) предложение о заключении Договора. ​
+      </p>
+      <ol>
+        <li>предмет договора
+          <ol>
+            <li>
+              В соответствии с Договором Заказчик поручает, а Исполнитель принимает на себя обязанности оказывать Заказчику в течение всего
+              срока действия настоящего Договора информационные услуги, размещая информационные материалы (далее – Материалы),
+              а Заказчик обязуется принять оказанные услуги надлежащего качества и оплатить их.
+            </li>
+            <li>
+              Договор закрепляет содержание, общие условия и порядок оказания услуг. Детальный перечень оказываемых услуг, их стоимость,
+              объем, сроки, место размещения, а при необходимости и дополнительные условия предоставления определяются Сторонами
+              в Приложении к настоящему Договору.
+            </li>
+          </ol>
+        </li>
+        <li>размещение материалов
+          <ol>
+            <li>
+              Материалы для размещения предоставляются Заказчиком в электронном виде и должны включать информационный модуль в виде графических
+              файлов форматов PNG, JPEG в соответствии с техническими требованиями.</li>
+          </ol>
+        </li>
+        <li>
+          права и обязанности сторон
+          <ol>
+            <li>
+              Права и обязанности Исполнителя:
+              <ol>
+                <li>
+                  Исполнитель обязуется обеспечить Заказчику своевременное оказание услуг по Договору, качество которых соответствует требованиям,
+                  обычно предъявляемым к услугам такого рода. В целях выполнения обязанностей по настоящему Договору Исполнитель
+                  имеет право привлекать третьих лиц. Ответственность за все действия третьих лиц перед Заказчиком несет
+                  Исполнитель;
+                </li>
+                <li>
+                  В случае обнаружения Исполнителем каких-либо обстоятельств, препятствующих оказанию услуг или существенно изменяющих их назначение
+                  и содержание, Исполнитель обязуется письменно уведомить об этом Заказчика не позднее 5 рабочих дней со
+                  дня возникновения таких обстоятельств и при необходимости приостановить оказание услуг по настоящему Договору
+                  до получения соответствующих распоряжений от Заказчика на основании указанного уведомления. В течение 2
+                  дней с момента получения уведомления, Заказчик обязуется представить Исполнителю соответствующие распоряжения;
+                </li>
+                <li>
+                  Исполнитель вправе не принимать к размещению Материалы, содержание и/или оформление которых, по мнению Исполнителя, не соответствует
+                  моральным и этическим нормам, не соответствует техническим требованиям;
+                </li>
+                <li>
+                  Исполнитель вправе отказывать Заказчику в размещении Рекламных материалов на Информационных ресурсах Исполнителя, если сочтет,
+                  что характер или содержание этих материалов нарушает действующее законодательство Республики Беларусь,
+                  носит оскорбительный характер, нарушает права и законные интересы других лиц либо противоречит настоящему
+                  Договору;
+                </li>
+                <li>
+                  Заказчик несет все риски, связанные с неполучением или несвоевременным получением Исполнителем информации и Материалов от
+                  Заказчика или от уполномоченных им на передачу информации и Материалов лиц, в том числе лиц, предоставляющих
+                  Заказчику услуги электронной почты и Интернет; курьерских служб и иных лиц;
+                </li>
+                <li>
+                  Исполнитель вправе не приступать к выполнению обязанностей по соответствующему Приложению, в случае если Заказчик не произвел
+                  оплату услуг в соответствии с п.4.2, п.4.3 настоящего Договора;
+                </li>
+                <li>
+                  Исполнитель вправе не приступать к выполнению обязанностей по соответствующему Приложению в случае наличия задолженности
+                  за услуги, оказанные в соответствии с ранее подписанными Приложениями;
+                </li>
+                <li>
+                  Исполнитель вправе временно приостановить оказание Заказчику услуг по техническим, технологическим и иным причинам, препятствующим
+                  оказанию услуг, на время устранения таких причин. Плата за услуги в течение срока, на который Исполнителем
+                  было приостановлено оказание услуг, в этих случаях не взимается. При этом Исполнитель обязуется уведомить
+                  письменно Заказчика о приостановлении оказания услуг предварительно, либо в течение 3 дней с момента приостановления
+                  с указанием причин неоказания услуг и даты возобновления оказания услуг;
+                </li>
+                <li>
+                  Исполнитель обязуется обеспечивать конфиденциальность информации, предоставленной Заказчиком, за исключением случаев, когда
+                  предоставление доступа к такой информации для третьих лиц является необходимым условием оказания Услуг,
+                  либо является обязательным в силу требований законодательства Республики Беларусь;
+                </li>
+              </ol>
+            </li>
+            <li>
+              Права и обязанности Заказчика:
+              <ol>
+                <li>
+                  Заказчик обязуется предоставить Исполнителю информацию и Материалы, необходимые для исполнения обязанностей по настоящему
+                  Договору не менее, чем за 3 рабочих дня до начала оказания услуг. В случае, если Материалы, предполагаемые
+                  к размещению, требуют предварительную обработку Исполнителем, Стороны могут в соответствующем Приложении
+                  установить иной срок предоставления Материалов;
+                </li>
+                <li>
+                  Заказчик обязуется своевременно оплачивать оказанные Исполнителем услуги в соответствии с условиями настоящего Договора и
+                  Приложений к нему;
+                </li>
+                <li>
+                  В случае если информация и Материалы, необходимые для исполнения услуг по настоящему Договору, содержат в себе рекламу товаров
+                  (работ, услуг), подлежащих обязательной сертификации или лицензированию, Заказчик обязан предоставить Исполнителю
+                  заверенные копии соответствующих лицензий и/или сертификатов по требованию Исполнителя;
+                </li>
+                <li>
+                  Заказчик вправе в целях исполнения Договора заменить не принятые к размещению Материалы на надлежащие либо привести Материалы
+                  в соответствие с указанными требованиями;
+                </li>
+                <li>
+                  Заказчик имеет право отказаться от услуг Исполнителя, указанных в Приложениях к настоящему Договору, не позднее, чем за 4
+                  рабочих дня до начала оказания услуг. При этом Исполнитель возвращает Заказчику все полученные от него
+                  денежные средства в течение 10 рабочих дней с момента предъявления Заказчиком соответствующего требования,
+                  оформленного надлежащим образом;
+                </li>
+                <li>
+                  Заказчик гарантирует, что имущественные права на использование объектов авторских прав (произведений), выраженных в Материалах
+                  (включая текст, рисунок, схему, график, таблицу, фотографическое изображение и иные), переданных Заказчиком
+                  Исполнителю для исполнения обязанностей по настоящему Договору, без ограничения территории и в течение
+                  всего срока охраны соответствующего объекта интеллектуальной собственности, принадлежат Заказчику и (или)
+                  используются им на законных основаниях, и указанные права не передаются Исполнителю. Указанные права могут
+                  быть использованы Исполнителем только для выполнения своих обязанностей по настоящему Договору в интересах
+                  Заказчика. Заказчик обязуется передать Исполнителю документы, подтверждающие права на использование соответствующих
+                  Материалов в течение 2 дней с момента получения соответствующего запроса Исполнителя;
+                </li>
+                <li>
+                  Заказчик не вправе передавать свои права по настоящему Договору третьим лицам;
+                </li>
+                <li>
+                  Заказчик обязуется при наличии претензий по оказанным Исполнителем Услугам письменно уведомить об этом Исполнителя в течение
+                  двадцати четырех часов с момента, когда Заказчику стало известно или должно было стать известным о неисполнении
+                  или ненадлежащем исполнении Исполнителем принятых на себя обязательств по настоящему Договору;
+                </li>
+                <li>Заказчик обязуется не осуществлять деятельности в рамках оказываемых Услуг в той или иной мере, направленной
+                  на:
+                  <ol>
+                    <li>
+                      подрыв сетевой безопасности;
+                    </li>
+                    <li>
+                      нарушение работы программно-технических средств, находящихся в сети Интернет;
+                    </li>
+                    <li>
+                      организацию сетевых атак на любые ресурсы, доступные через сеть Интернет;
+                    </li>
+                    <li>
+                      организацию массовых рассылок корреспонденции рекламного и иного характера (спам), за исключением случаев, когда такая рассылка
+                      инициирована самими получателями либо осуществляется с их предварительного согласия;
+                    </li>
+                    <li>
+                      размещение и распространение информации, содержание которой противоречит законодательству Республики Беларусь либо нормам
+                      международного права;
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <ol>
+                <li>
+                  Заказчик обязуется обеспечивать сохранность и конфиденциальность полученной от Исполнителя служебной информации (ссылки,
+                  имена и пароли доступа, номера мобильных телефонов специалистов Исполнителя и др.);
+                </li>
+                <li>
+                  Заказчик обязуется в случае предъявления Исполнителю претензий со стороны третьих лиц, представить Исполнителю документы
+                  и иные доказательства, подтверждающие авторское право Заказчика на Рекламные материалы;
+                </li>
+                <li>
+                  Заказчик вправе требовать от Исполнителя надлежащего оказания Услуг;
+                </li>
+                <li>
+                  Заказчик вправе расторгнуть настоящий Договор в случае:
+                  <ol>
+                    <li>
+                      невыполнения либо ненадлежащего выполнения Исполнителем своих обязательств по оказанию Услуг в рамках настоящего Договора;
+                    </li>
+                    <li>
+                      несогласия с вносимыми Исполнителем изменениями и/или дополнениями в настоящий Договор.
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>оплата и порядок приемки оказанных услуг
+          <ol>
+            <li>
+              Стоимость услуг по настоящему Договору определяется в Приложении к Договору. Стоимость услуг включает в себя все применимые
+              налоги и сборы в соответствии с действующим законодательством Республики Беларусь.
+            </li>
+            <li>
+              Стоимость Услуг, оказываемых в рамках настоящего Договора, определяется исходя из объёма, характера и продолжительности заказанных
+              Заказчиком Услуг согласно утвержденным Исполнителем Прейскурантам цен, действующим непосредственно в момент
+              выставления требования об оплате заказанных Услуг. Стоимость Услуг, оказываемых в рамках настоящего Договора,
+              не включенных в Прейскурант цен, определяется исходя объема, характера и продолжительности заказанных Заказчиком
+              Услуг и согласовывается Сторонами в протоколах согласования отпускных цен (тарифов) в момент выставления требования
+              об оплате заказанных Услуг.
+            </li>
+            <li>
+              Оплата услуг по соответствующему Приложению к Договору производится Заказчиком на условиях 100% предоплаты. Заказчик производит
+              оплату услуг не позднее 3 рабочих дней до начала оказания услуг посредством перечисления суммы платежа на банковский
+              расчетный счет Исполнителя. Соответствующим Приложением к настоящему Договору могут быть предусмотрены иные
+              сроки и порядок оплаты. Стороны договорились, что днем оплаты будет считаться момент зачисления денежных средств
+              на электронный кошелёк Исполнителя.
+            </li>
+          </ol>
+        </li>
+        <li>порядок разрешения споров
+          <ol>
+            <li>
+              Стороны будут стремиться к разрешению всех возможных споров и разногласий, которые могут возникнуть по Договору или в связи
+              с ним, путем переговоров.
+            </li>
+            <li>
+              Споры, не урегулированные путем переговоров, передаются на рассмотрение суда в порядке, предусмотренном действующим законодательством
+              Республики Беларусь.
+            </li>
+            <li>
+              Правом, применимым к Договору, является право Республики Беларусь.
+            </li>
+          </ol>
+        </li>
+        <li>ответственность сторон
+          <ol>
+            <li>
+              За невыполнение или ненадлежащее выполнение обязательств по настоящему Договору Исполнитель и Заказчик несут ответственность
+              в соответствии с законодательством Республики Беларусь.
+            </li>
+            <li>
+              Заказчик несет ответственность за содержание и достоверность сведений, содержащихся в предоставляемых им для размещения информации
+              и Материалах. В случае поступления в адрес Исполнителя претензий от третьих лиц, связанных с нарушением их
+              прав в связи с размещением Материалов Заказчика, Заказчик самостоятельно и за свой счет урегулирует указанные
+              претензии, если не будет доказано, что нарушение прав третьих лиц произошло по вине Исполнителя или привлеченного
+              им для оказания услуг по настоящему Договору третьего лица.
+            </li>
+            <li>
+              В случае нарушения Заказчиком оговоренных в настоящем Договоре сроков и/или порядка предоставления Материалов, в том числе
+              требований, предъявляемых Исполнителем к Материалам, а также сроков и порядка оплаты, Исполнитель вправе по
+              своему усмотрению потребовать от Заказчика выплаты неустойки в размере 20% от стоимости услуг за тот период,
+              в течение которого услуги не оказывались или согласовать новый период размещения Материалов Заказчика.
+            </li>
+            <li>
+              В случае отказа Заказчика от услуг Исполнителя, указанных в соответствующем Приложении, либо изменения даты начала оказания
+              услуг по инициативе Заказчика:
+              <ul>
+                <li>
+                  менее чем за 2 рабочих дня до начала оказания услуг, с Заказчика взимается неустойка в размере 40% от стоимости услуг, указанной
+                  в соответствующем Приложении;
+                </li>
+                <li>
+                  после начала размещения – стоимость оплаченных Заказчиком услуг не возвращается.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Условия настоящего Договора, предусматривающие штрафы, пени или иные санкции, а также возмещение убытков в случае нарушения
+              договорных обязательств, применяются только в том случае, если Сторона Договора, в чью пользу установлена санкция
+              либо в чью пользу возмещаются убытки, после нарушения договорных обязательств другой Стороной, в письменном
+              виде известит ее о намерении взыскать полагающиеся по Договору штрафы, пени или иные санкции и (или) потребовать
+              возмещения убытков в течение 5 рабочих дней после факта конкретного нарушения договорных обязательств. Если
+              же такого извещения сделано не было, то соответствующие условия настоящего Договора, предусматривающие штрафы,
+              пени или иные санкции, а также возмещение убытков в случае нарушения договорных обязательств, считаются не
+              действующими и применению не подлежат.
+            </li>
+            <li>
+              Исполнитель не несет ответственности за какие-либо убытки Заказчика и/или третьих лиц вне зависимости от того, мог ли Исполнитель
+              предвидеть возможность причинения таких убытков в конкретной ситуации или нет.
+            </li>
+            <li>
+              В случае если Заказчик просрочил исполнение обязательства по оплате оказанных по Договору услуг, Заказчик по письменному
+              требованию Исполнителя уплачивает Исполнителю пени за каждый день просрочки из расчета 20% от неуплаченной
+              в срок суммы, указанной в соответствующем Приложении.
+            </li>
+            <li>
+              Исполнитель освобождается от ответственности за убытки, явно или косвенно понесенные Заказчиком в результате полного или
+              частичного потребления или отсутствия возможности потребления Услуг в следующих случаях:
+              <ol>
+                <li>
+                  если убытки причинены в связи с заменой, ремонтом или настройкой оборудования, программного обеспечения или проведения других
+                  работ, вызванных необходимостью поддержания работоспособности или совершенствования программно-технических
+                  средств Исполнителя, при условии предварительного извещения Заказчика не менее чем за одни сутки;
+                </li>
+                <li>
+                  если убытки причинены вследствие действий или бездействия третьих лиц, либо по причине неработоспособности телекоммуникационных
+                  каналов, сетей передачи данных, информационных ресурсов или сервисов, а также аварий (сбоев в работе) в
+                  силовых электрических или компьютерных сетях, находящихся за пределами собственных ресурсов Исполнителя,
+                  либо на функционирование которых оно не имеет возможности оказывать влияние;
+                </li>
+                <li>
+                  если убытки причинены вследствие наличия ошибок или вредоносных компонентов в программном обеспечении, используемом на серверах
+                  Исполнителя или других серверах сети Интернет, а равно в программном обеспечении, используемом Заказчиком;
+                </li>
+                <li>
+                  если убытки причинены вследствие несоблюдения Заказчиком конфиденциальности своих учетных данных или иной информации закрытого
+                  характера, а равно вследствие несанкционированного доступа третьих лиц к техническим или информационным
+                  ресурсам Заказчика.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Исполнитель не несет ответственности за содержание информационных материалов, предоставленных Заказчиком, а равно за содержание
+              информации, размещенной на информационных ресурсах Заказчика.
+            </li>
+            <li>
+              Исполнитель не несет ответственности и не дает каких-либо явных или неявных гарантий (в том числе гарантий соблюдения прав
+              или пригодности для конкретных целей) на любую информацию, товар или услугу, распространяемые Заказчиком или
+              третьими лицами через сеть Интернет, в том числе, если они размещены, предлагаются или распространяются на
+              собственных информационных ресурсах Исполнителя.
+            </li>
+            <li>
+              Исполнитель не несет ответственности за блокировку учётной записи (аккаунта) в сервисе Instagram вследствие оказания Исполнителем
+              услуг, указанных в Приложениях к настоящему Договору.
+            </li>
+            <li>
+              Стороны настоящего Договора безоговорочно соглашаются с тем, что максимальный размер убытков, которые могут быть взысканы
+              с Исполнителя, ограничен сумой оплаченных Заказчиком Услуг, неисполнение, либо ненадлежащие исполнение которых
+              повлекло причинение убытков.
+            </li>
+            <li>
+              Ограничение ответственности Исполнителя, предусмотренное п.6.12 настоящего Договора, не может применяться в случаях, когда:
+              <ol>
+                <li>
+                  размер ответственности для данного вида обязательств или за данное нарушение определен законодательством Республики Беларусь;
+                </li>
+                <li>
+                  неисполнение, либо ненадлежащее исполнение Исполнителем своих обязательств по настоящему Договору является следствием его
+                  прямого умысла.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Заказчик самостоятельно несет полную ответственность за любые действия, предпринятые им в процессе использования сети Интернет,
+              информационных ресурсов или услуг Исполнителя, а также за последствия таких действий.
+            </li>
+            <li>
+              Заказчик самостоятельно несет полную ответственность за любые, в том числе и несанкционированные, действия третьих лиц, имевших
+              место вследствие несоблюдения Заказчиком конфиденциальности своих учетных данных или иной информации закрытого
+              характера, а также за последствия таких действий.
+            </li>
+            <li>
+              Заказчик самостоятельно несет полную ответственность за возможные нарушения авторского права, торговых марок и иных норм
+              законодательства Республики Беларусь, связанных с фактом размещения Рекламных материалов Заказчика в сети Интернет
+              на информационных ресурсах Исполнителя.
+            </li>
+            <li>
+              Заказчик возмещает Исполнителю любые убытки, понесенные Исполнителем в связи с размещением на информационных ресурсах Исполнителя
+              Рекламных материалов Заказчика, содержание которых противоречит законодательству Республики Беларусь.
+            </li>
+            <li>
+              Заказчик самостоятельно несет полную ответственность за блокировку учётной записи (аккаунта) в сервисе Instagram вследствие
+              совершённых Заказчиком действий.
+            </li>
+          </ol>
+        </li>
+        <li>обстоятельства непреодолимой силы
+          <ol>
+            <li>
+              Стороны освобождаются от ответственности за частичное или полное неисполнение своих обязательств по настоящему Договору,
+              если это явилось следствием действия обстоятельств непреодолимой силы (форс-мажора), возникших после заключения
+              настоящего Договора в результате событий чрезвычайного характера, которые Стороны не могли ни предвидеть, ни
+              предотвратить разумными мерами.
+            </li>
+            <li>
+              К обстоятельствам непреодолимой силы относятся события, на которые Сторона не может оказывать влияния и за возникновение
+              которых она не несет ответственности, как то: война, восстание, забастовка, землетрясение, наводнение, пожар,
+              суровые погодные условия или другие стихийные бедствия, правительственные постановления, распоряжения (указы)
+              государственных органов и должностных лиц, законы и иные нормативные акты компетентных органов, принятые после
+              акцепта настоящего Договора и делающие невозможным исполнение обязательств, установленных настоящим Договором,
+              а также действия государственных или местных органов государственной власти и управления или их представителей,
+              препятствующие выполнению условий настоящего Договора, и другие непредвиденные обстоятельства, в том числе
+              неполадки в городской электросети, технические проблемы на транзитных узлах сети Интернет и прочие нарушения
+              функционирования сетей передачи данных, находящихся вне сферы влияния Сторон, но не ограничиваясь указанным.
+            </li>
+            <li>
+              К обстоятельствам непреодолимой силы относятся события, на которые Сторона не может оказывать влияния и за возникновение
+              которых она не несет ответственности, как то: война, восстание, забастовка, землетрясение, наводнение, пожар,
+              суровые погодные условия или другие стихийные бедствия, правительственные постановления, распоряжения (указы)
+              государственных органов и должностных лиц, законы и иные нормативные акты компетентных органов, принятые после
+              акцепта настоящего Договора и делающие невозможным исполнение обязательств, установленных настоящим Договором,
+              а также действия государственных или местных органов государственной власти и управления или их представителей,
+              препятствующие выполнению условий настоящего Договора, и другие непредвиденные обстоятельства, в том числе
+              неполадки в городской электросети, технические проблемы на транзитных узлах сети Интернет и прочие нарушения
+              функционирования сетей передачи данных, находящихся вне сферы влияния Сторон, но не ограничиваясь указанным.
+            </li>
+            <li>
+              В случае если обстоятельства непреодолимой силы продолжают действовать более срока, указанного в п.7.3 настоящего Договора,
+              либо когда при их наступлении обеим Сторонам становится очевидным, что обстоятельства будут действовать более
+              этого срока, Стороны обязуются обсудить возможности альтернативных способов исполнения настоящего Договора
+              или его прекращения без возмещения убытков.
+            </li>
+          </ol>
+        </li>
+        <li>конфиденциальность
+          <ol>
+            <li>
+              Стороны соглашаются сохранять в тайне и считать конфиденциальным настоящий Договор, а также всю информацию, полученную одной
+              Стороной от другой Стороны, и обозначенную передающей Стороной как собственная или конфиденциальная информация
+              такой передающей Стороны (далее «Конфиденциальная Информация»), и не раскрывать, разглашать, обнародовать или
+              иным способом не предоставлять такую информацию какой-либо третьей стороне без предварительного письменного
+              разрешения передающей эту информацию Стороны за исключением случаев, предусмотренных действующим законодательством.
+            </li>
+            <li>
+              Каждая из Сторон предпримет все необходимые меры для защиты Конфиденциальной Информации как минимум с такой же степенью тщательности,
+              с какой она защищает собственную конфиденциальную информацию. Доступ к Конфиденциальной Информации будет предоставлен
+              только тем сотрудникам каждой из Сторон, которым он обоснованно необходим для выполнения служебных обязанностей
+              по исполнению Договора. Каждая из Сторон обяжет таких своих сотрудников принять те же обязательства в отношении
+              Конфиденциальной Информации, которые накладываются настоящим Договором на соответствующую Сторону.
+            </li>
+            <li>
+              Конфиденциальная Информация всегда остается собственностью передающей эту информацию Стороны и не должна копироваться или
+              иным способом воспроизводиться без предварительного письменного согласия такой передающей Стороны. Обязательство
+              защищать и хранить в секрете Конфиденциальную Информацию раскрывшей эту информацию Стороны не распространяется
+              на информацию, которая:
+              <ul>
+                <li>
+                  на момент раскрытия являлась или стала общедоступной, иначе как вследствие нарушения, допущенного принимающей Стороной; или
+                </li>
+                <li>
+                  становится известной принимающей Стороне из источника, иного чем раскрывающая Сторона, без нарушения принимающей Стороной
+                  условий настоящего Договора, что может быть удостоверено документами, достаточными для подтверждения того,
+                  что источником получения такой Конфиденциальной Информации является третья сторона; или
+                </li>
+                <li>
+                  была известна принимающей Стороне до ее раскрытия по Договору, что подтверждается документами, достаточными для установления
+                  факта такого обладания Конфиденциальной Информацией; или
+                </li>
+                <li>
+                  была раскрыта с письменного разрешения раскрывающей Стороны.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Обязательство сохранять в тайне Конфиденциальную Информацию в соответствии с условиями настоящей статьи 8 вступает в силу
+              с момента подписания Договора обеими Сторонами и остается в силе в течение 1 года по окончании срока действия
+              Договора или его расторжения по какой-либо причине.
+            </li>
+          </ol>
+        </li>
+        <li>извещения и уведомления
+          <ol>
+            <li>
+              Стороны договариваются, что безоговорочно признают юридическую силу текстов документов, полученных по каналам связи (электронной
+              почты) наравне с документами, исполненными в простой письменной форме на бумажном носителе, за исключением
+              случаев, когда оформление документов на бумажном носителе является обязательным в силу требований настоящего
+              Договора.
+            </li>
+            <li>
+              Стороны безоговорочно соглашаются с тем, что вся переписка, извещения и уведомления, полученные на адреса электронной почты,
+              указанные в настоящем Договоре как реквизиты Сторон, считаются доставленными адресату в надлежащей форме.
+            </li>
+            <li>
+              Стороны обязаны своевременно проверять корреспонденцию, поступающую на их адреса электронной почты.
+            </li>
+            <li>
+              Все риски, связанные с наступлением неблагоприятных последствий вследствие несоблюдения требований п.9.3 настоящего Договора,
+              несет Сторона, допустившая такое нарушение.
+            </li>
+          </ol>
+        </li>
+        <li>порядок внесения изменений и дополнений в договор
+          <ol>
+            <li>
+              Изменения и/или дополнения в настоящий Договор вносятся в одностороннем порядке по решению Исполнителя.
+            </li>
+            <li>
+              Изменения и/или дополнения, вносимые Исполнителем в настоящий Договор по собственной инициативе, вступают в силу для ранее
+              заключенных договоров не ранее чем через десять календарных дней после их утверждения, за исключением изменений
+              в Прейскуранте цен, вступающих в силу одновременно с его утверждением для вновь заключаемых Договоров и/или
+              требований об оплате, выставляемых и оплачиваемых после даты утверждения Прейскуранта цен, а также за исключением
+              вновь заключаемых договоров, для которых изменения/дополнения вступают в силу с даты их утверждения.
+            </li>
+            <li>
+              Изменения и/или дополнения, вносимые Исполнителем в настоящий Договор в связи с изменением законодательства, вступают в силу
+              одновременно с вступлением в силу изменений в данных актах законодательства.
+            </li>
+            <li>
+              Текст изменений и/или дополнений настоящего Договора, либо его новая редакция доводится Исполнителем до всеобщего сведения
+              посредством размещения (опубликования) соответствующей информации на официальном сайте Исполнителя
+            </li>
+            <li>
+              Размещение (опубликование) текстов изменений и/или дополнений настоящего Договора, либо его новой редакции на официальном
+              сайте Исполнителя по следующему адресу: www.instawect.com/privacy-policy/oferta производится Исполнителем в
+              срок не позднее, чем за пять календарных дней до даты вступления в силу вносимых изменений и/или дополнений
+              (за исключением случая, предусмотренного п.10.3 настоящего Договора).
+            </li>
+            <li>
+              В случае несогласия с внесенными изменениями и/или дополнениями, Заказчик имеет право расторгнуть настоящий Договор в соответствии
+              с п.3.3.3 настоящего Договора.
+            </li>
+            <li>
+              Уведомлением о расторжении настоящего Договора также признается любое письменное уведомление Заказчика, составленное на бумажном
+              носителе, о несогласии с внесенными изменениями и/или дополнениями, либо о неприсоединении к новой редакции
+              настоящего Договора или об отказе соблюдать его условия.
+            </li>
+            <li>
+              Стороны безоговорочно соглашаются с тем, что молчание (отсутствие письменных уведомлений о расторжении настоящего Договора,
+              либо о несогласии с отдельными положениями настоящего Договора, в том числе с изменением прейскуранта цен на
+              Услуги) признается согласием и присоединением Заказчика к новой редакции настоящего Договора (п.3 ст.159 Гражданского
+              Кодекса Республики Беларусь)
+            </li>
+          </ol>
+        </li>
+        <li>порядок разрешения споров
+          <ol>
+            <li>
+              Все споры и разногласия, связанные с настоящим Договором, Стороны обязуются разрешать путем переговоров.
+            </li>
+            <li>
+              В случае если Сторонам не удастся разрешить все спорные вопросы в порядке, установленном п.11.1 настоящего Договора, все
+              споры, возникающие из настоящего Договора, в том числе связанные с его заключением, изменением, расторжением,
+              исполнением, недействительностью подлежат разрешению в судебном порядке в соответствии с законодательством
+              Республики Беларусь.
+            </li>
+          </ol>
+        </li>
+        <li>срок действия договора
+          <ol>
+            <li>
+              Настоящий Договор считается заключенным с момента зачисления на электронный кошелёк Исполнителя денежных средств, уплаченных
+              Заказчиком в счет оплаты заказанных им Услуг в соответствии с выставленным ему требованием об оплате заказанных
+              Услуг.
+            </li>
+            <li>
+              Настоящий Договор действует в течение неопределенного срока вплоть до его расторжения в порядке, предусмотренном настоящим
+              Договором.
+            </li>
+            <li>
+              Настоящий Договор может быть расторгнут:
+              <ol>
+                <li>
+                  по соглашению Сторон;
+                </li>
+                <li>
+                  в одностороннем порядке по инициативе Исполнителя согласно п.3.2.1 настоящего Договора;
+                </li>
+                <li>
+                  в одностороннем порядке по инициативе Заказчика согласно п. 3.3.3 настоящего Договора.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Заказчик безоговорочно соглашается с тем, что в случае расторжения настоящего Договора в соответствии с п. 12.3.1 или п.
+              12.3.2 настоящего Договора, он теряет право требовать от Исполнителя возврата каких-либо сумм, уплаченных в
+              счет оплаты Услуг, даже в случае, если срок действия данных Услуг еще не окончен.
+            </li>
+            <li>
+              Срок действия настоящего Договора пролонгируется на тех же условиях на период, равный 7 дням, в случае, если не позднее,
+              чем за 2 дня до истечения срока действия настоящего Договора, от Сторон не поступит письменного отказа от пролонгации.
+            </li>
+            <li>
+              Настоящий Договор может быть расторгнут как по взаимному соглашению Сторон, так и по требованию одной из них. Сторона, намеревающаяся
+              расторгнуть настоящий Договор, должна уведомить другую Сторону о расторжении Договора не позднее, чем за 3
+              дня до предполагаемой даты расторжения. Договор будет считаться расторгнутым при условии, что к моменту такого
+              прекращения Договора Стороны исполнят принятые на себя обязательства.
+            </li>
+            <li>
+              В случае досрочного расторжения Договора по инициативе Заказчика, Заказчик обязан возместить Исполнителю стоимость фактически
+              оказанных услуг, рассчитываемую пропорционально выполненному на момент получения уведомления объему услуг.
+            </li>
+            <li>
+              При прекращении настоящего Договора обязательство Сторон, вытекающее из него, прекращается только его полным исполнением
+              обеими Сторонами и после завершения взаиморасчетов.
+            </li>
+          </ol>
+        </li>
+        <li>прочие условия
+          <ol>
+            <li>
+              Любые изменения и дополнения к Договору могут быть сделаны Сторонами в любой момент действия Договора по обоюдному согласию.
+              Указанные изменения и дополнения действительны только в том случае, если они оформлены в письменной форме и
+              приняты уполномоченными представителями Сторон.
+            </li>
+            <li>
+              Настоящий Договор остается в силе в случае изменения реквизитов Сторон, изменения их учредительных документов, включая, но
+              не ограничиваясь, изменением собственника, организационно-правовой формы и др.
+            </li>
+            <li>
+              Заказчик не имеет права без письменного согласия Исполнителя передавать третьим лицам свои права и обязанности по настоящему
+              Договору.
+            </li>
+            <li>
+              Настоящий Договор, включая Приложения к нему, а также любые изменения их, составляет полный Договор между Исполнителем и
+              Заказчиком в отношении предмета Договора и заменяет любые другие предварительные соглашения, урегулирования,
+              письменные и устные договоренности, относящиеся к предмету настоящего Договора.
+            </li>
+            <li>
+              Стороны обязуются не совершать каких-либо действий согласно настоящему Договору, которые были бы незаконными или в каком
+              бы то ни было отношении неприемлемыми в Республике Беларусь. В соответствии с этим Стороны обязуются нести
+              ответственность за соблюдение всех соответствующих правовых актов, которые могут каким-либо образом повлиять
+              на любой аспект настоящего Договора.
+            </li>
+            <li>
+              Заключая настоящий Договор, Заказчик тем самым заявляет, что:
+              <ol>
+                <li>
+                  он гарантирует наличие у него всех необходимых прав на произведения, входящие в состав информационных материалов, и что предоставляемые
+                  им к размещению информационные материалы не противоречат законодательству Республики Беларусь, не нарушают
+                  прав и законных интересов третьих лиц (личных, имущественных, авторских), не наносят ущерба их чести и
+                  достоинству и не содержат незаконных материалов;
+                </li>
+                <li>
+                  предоставляемые им информационные материалы не обременены правами третьих лиц и с авторами (исполнителями) произведений,
+                  входящих в состав информационных материалов, заключены соответствующие договоры, по которым им выплачено
+                  (выплачивается) вознаграждение за все виды использования их произведений, и что авторы (исполнители) разрешают
+                  использование произведений, входящих в состав информационных материалов, без указания имен авторов (исполнителей);
+                </li>
+                <li>
+                  информация, предоставленная им при оформлении заказа на предоставление Услуг, является полной, правдивой и точной;
+                </li>
+                <li>
+                  он осознает и соглашается с тем, что часть информации, которую он предоставил при оформлении заказа на предоставление Услуг,
+                  может быть доступна для третьих лиц, в силу требований законодательства Республики Беларусь.
+                </li>
+              </ol>
+            </li>
+            <li>
+              В случае если какое-либо из условий настоящего Договора потеряет юридическую силу, будет признанно незаконным, или будет
+              исключено из настоящего Договора, то это не влечет недействительность остальных условий настоящего Договора,
+              которые сохранят юридическую силу и являются обязательными для исполнения всеми Сторонами.
+            </li>
+            <li>
+              Все вопросы, неурегулированные настоящим Договором, разрешаются в соответствии с действующим законодательством Республики
+              Беларусь, а также локальными нормативными документами Исполнителя, при условии их соответствия действующему
+              законодательству Республики Беларусь.
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </section>
+  </div>
 
   <script src="js/scripts.min.js"></script>
 

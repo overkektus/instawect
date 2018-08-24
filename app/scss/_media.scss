@@ -4,37 +4,225 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
+  .price {
+    height: auto;
+  }
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
+  .main {
+    padding: 15% 5% 0 5%;
+  }
+
+  .main__tagline {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .main__phone-wrapper {
+    left: 50%;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .how-it-works {
+    height: auto;
+  }
+
+  .how-it-works__item-container-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .how-it-works__item {
+    width: 70%;
+  }
+
+  .guarantees__item-container {
+    padding: 0;
+  }
+
+  .contacts__input-field--textarea {
+    height: 200px;
+  }
+
+  .contacts__submit-btn {
+    width: 98%;
+  }
+
+  .footer {
+    height: fit-content;
+    padding: 5% 2%;
+  }
+
+  .contacts {
+    margin-bottom: 20px;
+  }
+
+  .footer__links-wrapper,
+  .contacts__input-wrapper {
+    flex-direction: column;
+  }
+
+  .footer__copyright,
+  .footer__links {
+    margin-top: 10px;
+  }
+
+  .popup {
+    width: auto;
+  }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
+  .burger-menu {
+    display: block;
+  }
+
+  .header__menu-mobile {
+    position: absolute;
+    top: 79px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $accent;
+  }
+
+  .header__menu-item {
+    padding: 10px 0;
+  }
+
+  .header__menu-mobile--open {
+    transform: translateY(0);
+    transition: all 1s ease-in-out;
+  }
+
+  .header__menu-mobile--close {
+    transform: translateY(-400px);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .main__title {
+    font-size: 1.5rem;
+  }
+
+  .main__content {
+    font-size: 1rem;
+  }
+
+  .main__phone {
+    height: 40vh;
+    width: 40vh;
+  }
+
+  .about-us__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .about-us__title > span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .about-us {
+    padding-bottom: 30px;
+    height: auto;
+  }
+
+  .guarantees {
+    height: auto;
+  }
+
+  .guarantees__item-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .guarantees__item {
+    width: auto;
+  }
+
+  .popup {
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+  body {
+    font-size: 14px;
+  }
+
+  .main {
+    justify-content: center;
+  }
+
+  .main__phone-wrapper {
+    left: auto;
+  }
+
+  .main__phone {
+    height: 30vh;
+    width: 30vh;
+  }
+
+  .main__tagline {
+    padding: 10px;
+  }
+
+  .contacts__title-wrapper {
+    flex-direction: column;
+  }
+
+  .contacts__title {
+    align-self: center;
+    font-size: 1.5rem;
+  }
+
+  .contacts__email {
+    align-self: flex-end;
+  }
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .how-it-works {
+    background-image: none;
+  }
+
+  .guarantees {
+    background-image: none;
+  }
+
+  .price__item-title {
+    font-size: 1.2rem;
+  }
+
+  .price__item-text {
+    font-size: 1.1rem;
+  }
+
+  .contacts__submit-btn {
+    font-size: 1.2rem;
+  }
+
   .header__company-name {
     display: none;
   }
-}
 
-/*==========  Mobile First  ==========*/
-
-// ≤576px
-@include media-breakpoint-up(sm) {
-}
-
-// ≤768px
-@include media-breakpoint-up(md) {
-}
-
-// ≤992px
-@include media-breakpoint-up(lg) {
-}
-
-// ≤1200px
-@include media-breakpoint-up(xl) {
+  .message {
+    right: auto;
+  }
 }

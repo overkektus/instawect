@@ -20,7 +20,7 @@ gulp.task("browser-sync", function() {
     notify: false,
     open: false,
     // online: false, // Work Offline Without Internet Connection
-    tunnel: true,
+    tunnel: false,
     tunnel: "instawect" // Demonstration page: http://projectname.localtunnel.me
   });
 });
@@ -51,6 +51,8 @@ gulp.task("js", function() {
     gulp
       .src([
         "app/libs/jquery/dist/jquery.min.js",
+        "app/libs/magnificPopup/jquery.magnific-popup.min.js",
+        "app/js/products.js",
         "app/js/common.js" // Always at the end
       ])
       .pipe(concat("scripts.min.js"))
