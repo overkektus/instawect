@@ -1,4 +1,13 @@
 $(function () {
+  if ('serviceWorker' in navigator) {
+    // Весь код регистрации у нас асинхронный.
+    navigator.serviceWorker.register('./js/sw.js')
+      .then(() => navigator.serviceWorker.ready.then((worker) => {
+        worker.sync.register('syncdata');
+      }))
+      .catch((err) => console.log(err));
+  }
+
   var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
     V = 0.5; // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
   for (var i = 0; i < linkNav.length; i++) {
