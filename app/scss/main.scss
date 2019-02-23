@@ -1,10 +1,10 @@
-@import "vars";
-@import "fonts";
-@import "libs";
+@import 'vars';
+@import 'fonts';
+@import 'libs';
 
-@import "_mixins/adaptive-background";
-@import "_mixins/shadow";
-@import "_mixins/shadow3d";
+@import '_mixins/adaptive-background';
+@import '_mixins/shadow';
+@import '_mixins/shadow3d';
 
 * {
   box-sizing: border-box;
@@ -112,7 +112,7 @@ ul > li {
   height: 3px;
   width: 39.5px;
   background: rgba(111, 111, 111, 1);
-  content: "";
+  content: '';
 }
 
 .burger::after {
@@ -122,7 +122,7 @@ ul > li {
   height: 3px;
   width: 39.5px;
   background: rgba(111, 111, 111, 1);
-  content: "";
+  content: '';
 }
 
 .burger::after,
@@ -157,7 +157,7 @@ ul > li {
   align-content: center;
   align-items: center;
   @include shadow();
-  @include adaptive-background("../img/header_background.jpg", #93b0fe);
+  @include adaptive-background('../img/header_background.jpg', #93b0fe);
 }
 
 .header__company {
@@ -198,7 +198,7 @@ ul > li {
 .header__menu-item > a {
   color: white;
   font-size: 1.25rem;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
 }
 
 .main {
@@ -208,9 +208,9 @@ ul > li {
   margin-top: 79px;
   padding: 15% 14% 0 14%;
 
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
 
-  @include adaptive-background("../img/main_background.jpg", white);
+  @include adaptive-background('../img/main_background.jpg', white);
 }
 
 .main__title {
@@ -284,14 +284,14 @@ ul > li {
 
 .about-us__title > span {
   font-size: 2.5rem;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
   font-weight: 200;
   text-transform: lowercase;
 }
 
 .about-us__content {
   font-size: 1.2rem;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
 }
 
 .about-us__callback {
@@ -299,7 +299,7 @@ ul > li {
   width: 192px;
   margin-top: 5%;
   padding: 20px 57px;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
   color: $accent !important;
   text-decoration: none !important;
   background-color: transparent;
@@ -331,7 +331,7 @@ ul > li {
   justify-content: center;
   height: 100vh;
   padding: 1rem 0%;
-  @include adaptive-background("../img/how-it-work_background.jpg", #93b0fe);
+  @include adaptive-background('../img/how-it-work_background.jpg', #93b0fe);
 }
 
 .how-it-works__title {
@@ -375,7 +375,7 @@ ul > li {
 .how-it-works__item-text {
   line-height: 24px;
   font-size: 1.1rem;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
 }
 
 .guarantees {
@@ -385,8 +385,8 @@ ul > li {
   height: 100vh;
   padding: 2% 0;
 
-  background-image: url("../img/guarantees_background-right-top.png"),
-    url("../img/guarantees_background-left-bottom.png");
+  background-image: url('../img/guarantees_background-right-top.png'),
+    url('../img/guarantees_background-left-bottom.png');
   background-position: right top, left bottom;
   background-repeat: no-repeat;
 }
@@ -426,7 +426,7 @@ ul > li {
 .guarantees__item-text {
   line-height: 26px;
   font-size: 1.2rem;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
 }
 
 .style {
@@ -435,9 +435,9 @@ ul > li {
   align-items: center;
   height: 212px;
 
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
 
-  @include adaptive-background("../img/style_background.jpg", #93b0fe);
+  @include adaptive-background('../img/style_background.jpg', #93b0fe);
 }
 
 .style__title {
@@ -447,7 +447,7 @@ ul > li {
 }
 
 .style__title > span {
-  font-family: "MullerRegular", sans-serif;
+  font-family: 'MullerRegular', sans-serif;
   font-size: 3rem;
 }
 
@@ -510,7 +510,7 @@ ul > li {
 
 .price__item-price {
   z-index: 2;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
 }
 
 .price__discout-icon {
@@ -526,7 +526,7 @@ ul > li {
   padding: 10px;
   font-size: 1rem;
   line-height: 1.15rem;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
   border: 1px solid rgb(232, 232, 232);
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.6);
@@ -571,7 +571,7 @@ ul > li {
 }
 
 .contacts__email {
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
   color: white;
 }
 
@@ -614,7 +614,7 @@ ul > li {
   margin: 1% 1%;
 
   color: #7a7a7a;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
 
   border: 2px solid $accent-two;
   border-radius: 10px;
@@ -639,7 +639,7 @@ ul > li {
   width: 200px;
   padding: 10px 30px;
   margin: 0 1%;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
   color: white;
   border: 2px solid transparent;
   border-radius: 10px;
@@ -664,11 +664,11 @@ ul > li {
   flex-direction: column;
   justify-content: space-between;
   padding: 3% 10% 0 10%;
-  @include adaptive-background("../img/footer_background.jpg", $accent);
+  @include adaptive-background('../img/footer_background.jpg', $accent);
 }
 
 .footer__title {
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
   color: white;
 }
 
@@ -712,7 +712,7 @@ ul > li {
 
 .footer__links-item > a {
   text-decoration: underline;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
   color: white;
 }
 
@@ -722,7 +722,7 @@ ul > li {
 
 .footer__copyright {
   margin: 0;
-  font-family: "MullerLight", sans-serif;
+  font-family: 'MullerLight', sans-serif;
   color: white;
 }
 
@@ -750,7 +750,7 @@ ul > li {
 
 .popup__title::before,
 .popup__title::after {
-  content: "\"";
+  content: '"';
 }
 
 .popup__list {
@@ -787,7 +787,7 @@ ol {
   counter-reset: li;
   li:before {
     counter-increment: li;
-    content: counters(li, ".") ". ";
+    content: counters(li, '.') '. ';
   }
 }
 
@@ -807,7 +807,7 @@ ol {
 }
 
 .message--success {
-  background-color: #4BB543;
+  background-color: #4bb543;
 }
 
 .message--error {
@@ -867,4 +867,4 @@ ol {
   }
 }
 
-@import "media"; // Always at the end
+@import 'media'; // Always at the end
