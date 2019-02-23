@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Head = () => (
+const header = () => (
   <Header>
     <Company>
       <Logo src="/static/img/logo.png" alt="логотип Instawect" />
@@ -29,7 +29,7 @@ const Head = () => (
   </Header>
 )
 
-export default Head
+export default header
 
 const Header = styled.header`
   display: flex;

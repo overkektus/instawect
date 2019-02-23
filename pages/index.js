@@ -1,13 +1,15 @@
 import React from 'react'
 import { createGlobalStyle } from 'styled-components'
 import Meta from '../components/Meta'
-import Head from '../components/Head'
+import Head from '../components/Header'
+import SubHeader from '../components/SubHeader'
 
 const Home = () => (
   <>
     <GlobalStyle />
     <Meta title="Home" />
     <Head />
+    <SubHeader />
   </>
 )
 
