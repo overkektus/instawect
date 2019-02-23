@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 import Meta from '../components/Meta'
 import Head from '../components/Header'
 import SubHeader from '../components/SubHeader'
+import AboutUs from '../components/AboutUs'
 
 const Home = () => (
   <>
@@ -10,6 +11,7 @@ const Home = () => (
     <Meta title="Home" />
     <Head />
     <SubHeader />
+    <AboutUs />
   </>
 )
 
