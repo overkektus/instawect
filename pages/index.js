@@ -4,14 +4,18 @@ import Meta from '../components/Meta'
 import Head from '../components/Header'
 import SubHeader from '../components/SubHeader'
 import AboutUs from '../components/AboutUs'
+import HowItWork from '../components/HowItWork'
 
 const Home = () => (
   <>
     <GlobalStyle />
     <Meta title="Home" />
     <Head />
-    <SubHeader />
-    <AboutUs />
+    <main>
+      <SubHeader />
+      <AboutUs />
+      <HowItWork />
+    </main>
   </>
 )
 
