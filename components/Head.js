@@ -26,35 +26,19 @@ const Head = () => (
         </MenuItem>
       </ul>
     </Menu>
-    {/* <section id="main" class="main">
-      <div class="main__tagline">
-        <h2 class="main__title">
-          Привлекаем клиентов
-          <br /> Добиваемся результатов
-        </h2>
-        <p class="main__content">
-          <span>Instawect</span> - ваш первый шаг к успешному профилю
-        </p>
-        <a class="main__more-btn" href="#how-it-works">
-          Подробнее
-        </a>
-      </div>
-      <div class="main__phone-wrapper">
-        <img class="main__phone" src="./img/main_background.png" alt="" />
-      </div>
-    </section> */}
   </Header>
 )
 
 export default Head
 
 const Header = styled.header`
+  display: flex;
+  position: fixed;
+  z-index: 100;
   height: 80px;
   width: 100vw;
   padding: 0 30px;
-  position: fixed;
-  z-index: 100;
-  display: flex;
+  margin-top: -80px;
   justify-content: space-between;
   align-content: center;
   align-items: center;
