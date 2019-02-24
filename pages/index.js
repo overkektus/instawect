@@ -6,6 +6,7 @@ import SubHeader from '../components/SubHeader'
 import AboutUs from '../components/AboutUs'
 import HowItWork from '../components/HowItWork'
 import Guarantees from '../components/Guarantees'
+import IndividualStyle from '../components/IndividualStyle'
 
 const Home = () => (
   <>
@@ -17,6 +18,7 @@ const Home = () => (
       <AboutUs />
       <HowItWork />
       <Guarantees />
+      <IndividualStyle />
     </main>
   </>
 )
