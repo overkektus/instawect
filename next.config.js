@@ -1,10 +1,10 @@
-module.exports = {
-  webpack: config => {
-    // Fixes npm packages that depend on `fs` module
+// next.config.js
+const withImages = require('next-images')
+module.exports = withImages({
+  webpack(config) {
     config.node = {
-      fs: 'empty'
+      fs: 'empty',
     }
-
     return config
-  }
-}
+  },
+})
